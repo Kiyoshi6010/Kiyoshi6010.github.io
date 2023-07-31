@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    font-family: "Meiryo" ,"メイリオ";
+}
+
+body {
+    background: linear-gradient(#FFFFDF, #FFFFFF)
+}
+
+.zoom {
+    transition: transform 0.3s;
+}
+    
+.zoom.in {
+    transform-origin: left;
+    transform: scale(2, 2);
+}
+    
+.zoom:hover {
+    cursor: zoom-in;
+}
+    
+.zoom.in:hover {
+    cursor: zoom-out;
+}  
+
+#menu > ul > li {
+    display: inline;
+    margin: 0px 8px 0px 0px;
+    border: 1px solid darkblue;
+    border-radius: 4px;
+    padding: 4px;
+    background: linear-gradient(white, gray);
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+#top {
+    color:  #8b474b;
+}
+
+h1 {
+    background-color: #EEEEBB;
+}
+
+h2 {
+    background-color: #EEEEBB;
+}
+
+h3 {
+    background-color: #FFEECC;
+} 
+
+ul {
+    display: flex;
+}
+
+.kokutetsu {
+    color: #8b474b;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+table {
+    /* border: 1px solid black; */
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+
+}
+
+tr:first-child {
+    font-size: 1.3rem;
+}
+
+tr:last-child {
+    font-size: 1.1rem;
+}
+
+th {
+    border: 2px double blue;
+}
+
+td {
+    border: 1px dashed black;
+    border-radius: 8px;
+}
